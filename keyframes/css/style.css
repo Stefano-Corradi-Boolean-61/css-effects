@@ -1,0 +1,47 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: muovi-quadrato;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+
+
+@keyframes muovi-quadrato{
+  0%{
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25%{
+    top: 0;
+    left: calc(100% - 100px);
+    background-color: rgb(68, 0, 255);
+  }
+  50%{
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background-color: rgb(21, 255, 0);
+  }
+  75%{
+    top: calc(100% - 100px);
+    left: 0;
+    background-color: rgb(251, 255, 0);
+  }
+  100%{
+    top: 0;
+    left: 0;
+  }
+}
